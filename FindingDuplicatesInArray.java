@@ -12,17 +12,19 @@ public class FindingDuplicatesInArray {
 			int element = sc.nextInt();
 			in[i]= element;
 		}
+		boolean is = true;
 		for(int i=0;i < in.length;i++) {
 			for(int j =i;j<in.length-i-1;j++) {
 				//if(j==in.length) break;
 				if(in[i]==in[j+1]) {
 					System.out.println("there was a similar value in the array");
+					is = false;
 					break;
 				}
-				else {
-					System.out.println("there is no duplicate value");
-				}
 			}
+		}
+		if(is) {
+			System.out.println("there is no similar value");
 		}
 	}
 }
