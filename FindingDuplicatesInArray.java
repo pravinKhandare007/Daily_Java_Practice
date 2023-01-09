@@ -13,11 +13,14 @@ public class FindingDuplicatesInArray {
 			in[i]= element;
 		}
 		for(int i=0;i < in.length;i++) {
-			for(int j =i;j<in.length-i;j++) {
-				if(j==in.length) break;
-				if(in[i]==in[j]) {
+			for(int j =i;j<in.length-i-1;j++) {
+				//if(j==in.length) break;
+				if(in[i]==in[j+1]) {
 					System.out.println("there was a similar value in the array");
 					break;
+				}
+				else {
+					System.out.println("there is no duplicate value");
 				}
 			}
 		}
