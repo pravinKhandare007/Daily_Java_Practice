@@ -6,7 +6,7 @@ public class SortingStringArrayInAlphabeticalOrder {
 		boolean var =true;
 		if(i>0) var = true;
 		if(i==0) var =false;
-		if(i < 0) var = true;
+		if(i < 0) var = false;
 		return var;
 	}
 	
@@ -15,9 +15,9 @@ public class SortingStringArrayInAlphabeticalOrder {
 		for(int i=0;i<stringArray.length-1;i++) {
 			for(int j =0; j< stringArray.length -1-i;j++) {
 				if(intToBoolean(stringArray[j].compareTo(stringArray[j+1]))) {
-					String storingIntermidiate = stringArray[i];
-					stringArray[i]=stringArray[i+1];
-					stringArray[i+1]=storingIntermidiate;
+					String storingIntermidiate = stringArray[j];
+					stringArray[j]=stringArray[j+1];
+					stringArray[j+1]=storingIntermidiate;
 				}
 			}
 		}
