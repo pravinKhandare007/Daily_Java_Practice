@@ -4,10 +4,10 @@ public class StringRotation {
 	
 	public String rotateString(String s) {
 		char[] charArrayOfString = s.toCharArray();
-		char intermidiate = charArrayOfString[s.length() -1];
-		charArrayOfString[s.length() -1] = charArrayOfString[0];
-		charArrayOfString[0] = intermidiate;
-		String rotatedString = new String(charArrayOfString);
+		char firstCharecter = charArrayOfString[0];
+		for(int i =0; i < charArrayOfString.length;i++ ) {
+			charArrayOfString[i] = charArrayOfString[i+1];
+		}
 		return rotatedString;
 	}
 
