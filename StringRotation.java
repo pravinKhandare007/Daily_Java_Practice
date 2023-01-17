@@ -21,10 +21,16 @@ public class StringRotation {
 		StringRotation cs = new StringRotation();
 		for(int i =0; i < input.length();i++) {
 			input = cs.rotateString(input);
-			System.out.println(input);
 			if(target.equals(input)){
 				areInputAndTargetEqualAfterRotation = true;
 			}
+		}
+		
+		if(areInputAndTargetEqualAfterRotation) {
+			System.out.println("after string rotation target and input string match");
+		}
+		else {
+			System.out.println("they do not match");
 		}
 		
 		
