@@ -13,7 +13,7 @@ public class ShuffleString {
 		//or lets try bubble sort
 		
 		for(int i=0;i < indices.length;i++) {
-			for(int j =0; j< indices.length - i ;j++) {
+			for(int j =0; j< indices.length - i - 1 ;j++) {
 				if(indices[j]>indices[j+1]) {
 					int remember = indices[j+1];
 					indices[j+1] = indices[j];
