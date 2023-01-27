@@ -1,2 +1,1 @@
-# DemoRepository
-just to try how to make a public repository 
+this repository is for uploading daily java practice problems
